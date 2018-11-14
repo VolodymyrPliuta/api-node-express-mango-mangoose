@@ -19,6 +19,14 @@ router.get('/', (req, res) => {
     res.json({ message: 'hooray! welcome to our api!' });   
 });
 
+router.get('/happy', (req, res) => {
+    res.json({ message: 'API makes people happy!!' });   
+});
+
+router.get('/front-end', (req, res) => {
+    res.json({ message: 'Front-End is awesome' });   
+});
+
 // more routes for our API will happen here
 
 // REGISTER OUR ROUTES -------------------------------
