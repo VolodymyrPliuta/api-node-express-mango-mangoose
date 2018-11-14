@@ -27,6 +27,10 @@ router.get('/front-end', (req, res) => {
     res.json({ message: 'Front-End is awesome' });   
 });
 
+router.post('/front-end', (req, res) => {
+    res.json({ message: 'Become the ninja' });   
+});
+
 // more routes for our API will happen here
 
 // REGISTER OUR ROUTES -------------------------------
