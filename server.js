@@ -2,6 +2,10 @@
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
+var mongoose   = require('mongoose');
+var Bear       = require('./app/models/bear');
+
+mongoose.connect('mongodb://localhost:27017/travel'); // connect to our database
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
